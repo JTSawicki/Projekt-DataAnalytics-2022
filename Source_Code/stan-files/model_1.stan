@@ -1,19 +1,25 @@
-data { // Dane wejściowe
-   int N;
+data {
+    int<lower=0> N;
+    vector[N] x;
+    vector[N] y;
 }
 
-parameters { // Zmienne programu STAN idące na wyjście
-   real random;
+parameters {
+    real alpha;
+    real beta;
+    real<lower=0> sigma;
 }
 
-model { // Obliczenia i zmienne lokalne
-   random ~ normal(0, N);
+model {
+    alpha ~ normal(0,10);
+    beta ~normal(0,10);
+    sigma ~ normal(0,1);
+
+    y ~ normal(alpha + beta * x, sigma);
 }
 
-generated quantities { // Dane wyjściowe obliczne po model
-   int result = 0;
-   for (i in 1:N) {
-      result += i*i;
-      print("Stan jest głupi", i);
-   }
+generated quantities {
+    vector[N] y_sim;
+    for(i in 1:N)
+        y_sim[i] = normal_rng(alpha + beta * x[i], sigma);
 }
