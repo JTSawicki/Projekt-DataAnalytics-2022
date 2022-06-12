@@ -1,3 +1,4 @@
+// Model alpha + beta*x
 data {
     int<lower=0> N;
     vector[N] x;
