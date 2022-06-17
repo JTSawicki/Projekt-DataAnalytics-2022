@@ -5,15 +5,17 @@ data {
     vector[N] y;
 }
 
+// Parameter prior
+// <lower=0> - ponieważ zależność wiemy że musi być dodatnia
 parameters {
-    real alpha;
-    real beta;
+    real<lower=0> alpha;
+    real<lower=0> beta;
     real<lower=0> sigma;
 }
 
 model {
     alpha ~ normal(0,10);
-    beta ~normal(0,10);
+    beta ~normal(0,0.1);
     sigma ~ normal(0,1);
 
     y ~ normal(alpha + beta * x, sigma);

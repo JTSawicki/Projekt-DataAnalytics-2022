@@ -6,20 +6,20 @@ data {
 }
 
 parameters {
-    real alpha;
-    real beta;
-    real gamma;
-    real delta;
-    real epsilon;
+    real<lower=0> alpha;
+    real<lower=0> beta;
+    real<lower=0> gamma;
+    real<lower=0> delta;
+    real<lower=0> epsilon;
     real<lower=0> sigma;
 }
 
 model {
     alpha ~ normal(0,10);
-    beta ~ normal(0,10);
-    gamma ~ normal(0,10);
-    delta ~ normal(0,10);
-    epsilon ~ normal(0,10);
+    beta ~ normal(0,0.1);
+    gamma ~ normal(0,0.1);
+    delta ~ normal(0,0.1);
+    epsilon ~ normal(0,0.1);
     sigma ~ normal(0,1);
 
     y ~ normal(alpha + beta * x + gamma * x^2 + delta * x^3 + epsilon * x^4, sigma);
