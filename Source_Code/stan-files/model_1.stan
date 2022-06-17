@@ -15,7 +15,7 @@ parameters {
 
 model {
     alpha ~ normal(0,10);
-    beta ~normal(0,0.1);
+    beta ~normal(0.007,0.1);
     sigma ~ normal(0,1);
 
     y ~ normal(alpha + beta * x, sigma);

@@ -16,7 +16,7 @@ parameters {
 
 model {
     alpha ~ normal(0,10);
-    beta ~ normal(0,0.1);
+    beta ~ normal(0.007,0.1);
     gamma ~ normal(0,0.1);
     delta ~ normal(0,0.1);
     epsilon ~ normal(0,0.1);
