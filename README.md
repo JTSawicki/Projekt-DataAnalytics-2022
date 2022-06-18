@@ -8,3 +8,6 @@ Repozytorium zawiera projekt na predmiot "Data Analytics 2022" wykonany przez Ja
 
 ### Sprawozdanie
 Sprawozdanie zostało napisane z urzyciem narzędzia Google Docs i znajduje się [w tym miejscu](https://docs.google.com/document/d/1UEY-gs9shsEoOdUqZwZa_8NE7BIbyIOiol4IujZRjRg/edit?usp=sharing).
+
+### Źródło danych
+[Eurostat](https://ec.europa.eu/eurostat/web/main/data/database)
