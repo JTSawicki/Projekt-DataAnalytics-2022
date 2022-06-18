@@ -17,6 +17,7 @@ model {
     alpha ~ normal(0,10);
     beta ~normal(0.007,0.01);
     sigma ~ normal(0,1);
+    // sigma ~ exponential(1)
 
     y ~ normal(alpha + beta * x, sigma);
 }
