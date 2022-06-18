@@ -14,3 +14,5 @@ Sprawozdanie zostało napisane z urzyciem narzędzia Google Docs i znajduje się
 
 ### Źródło danych
 Dane pozyskano z europejskiej agencji statystycznej [Eurostat](https://ec.europa.eu/eurostat/web/main/data/database)
+
+Pozyskano dane o cenie MJ gazu i KWh prądu w euro. Dla krajów: Austria, Belgia, Bułgaria, Czechy, Niemcy, Dania, Estonia, Hiszpania, Francja, Horwacja, Węgry, Irlandia, Włochy, Litwa, Luksemburg, Łotwa, Niderlandy, Polska, Portugalia, Rumunia, Szwecja, Słowacja, Turcja, Wielka Brytania.
