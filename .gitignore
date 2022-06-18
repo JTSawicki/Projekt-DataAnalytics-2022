@@ -1,5 +1,7 @@
 # Some bullshit plots and other stupid crap that we don't give a fuck about
 *.png
+*.exe
+*.hpp
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
